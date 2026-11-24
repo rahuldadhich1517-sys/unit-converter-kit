@@ -1,0 +1,125 @@
+{
+  "name": "@rahul_dadhich15/unit-converter-kit",
+  "version": "0.1.0",
+  "description": "Production-ready, zero-runtime-dependency unit conversion library for TypeScript and JavaScript applications.",
+  "author": "Rahul Dadhich",
+  "license": "MIT",
+  "keywords": [
+    "unit-converter",
+    "converter",
+    "units",
+    "measurement",
+    "area",
+    "length",
+    "volume",
+    "mass",
+    "weight",
+    "temperature",
+    "speed",
+    "data-storage",
+    "file-size",
+    "energy",
+    "power",
+    "pressure",
+    "zero-dependency",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./area-convert": {
+      "types": "./dist/area-convert/index.d.ts",
+      "import": "./dist/area-convert/index.js",
+      "require": "./dist/area-convert/index.cjs"
+    },
+    "./data-storage-convert": {
+      "types": "./dist/data-storage-convert/index.d.ts",
+      "import": "./dist/data-storage-convert/index.js",
+      "require": "./dist/data-storage-convert/index.cjs"
+    },
+    "./file-size-convert": {
+      "types": "./dist/file-size-convert/index.d.ts",
+      "import": "./dist/file-size-convert/index.js",
+      "require": "./dist/file-size-convert/index.cjs"
+    },
+    "./energy-convert": {
+      "types": "./dist/energy-convert/index.d.ts",
+      "import": "./dist/energy-convert/index.js",
+      "require": "./dist/energy-convert/index.cjs"
+    },
+    "./length-convert": {
+      "types": "./dist/length-convert/index.d.ts",
+      "import": "./dist/length-convert/index.js",
+      "require": "./dist/length-convert/index.cjs"
+    },
+    "./power-convert": {
+      "types": "./dist/power-convert/index.d.ts",
+      "import": "./dist/power-convert/index.js",
+      "require": "./dist/power-convert/index.cjs"
+    },
+    "./pressure-convert": {
+      "types": "./dist/pressure-convert/index.d.ts",
+      "import": "./dist/pressure-convert/index.js",
+      "require": "./dist/pressure-convert/index.cjs"
+    },
+    "./speed-convert": {
+      "types": "./dist/speed-convert/index.d.ts",
+      "import": "./dist/speed-convert/index.js",
+      "require": "./dist/speed-convert/index.cjs"
+    },
+    "./temperature-convert": {
+      "types": "./dist/temperature-convert/index.d.ts",
+      "import": "./dist/temperature-convert/index.js",
+      "require": "./dist/temperature-convert/index.cjs"
+    },
+    "./volume-convert": {
+      "types": "./dist/volume-convert/index.d.ts",
+      "import": "./dist/volume-convert/index.js",
+      "require": "./dist/volume-convert/index.cjs"
+    },
+    "./weight-convert": {
+      "types": "./dist/weight-convert/index.d.ts",
+      "import": "./dist/weight-convert/index.js",
+      "require": "./dist/weight-convert/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:smoke": "node scripts/smoke-test.mjs && node scripts/smoke-test.cjs",
+    "test:consumer": "node scripts/consumer-test.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.4",
+    "@vitest/coverage-v8": "^3.0.5",
+    "eslint": "^9.20.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0",
+    "vitest": "^3.0.5"
+  }
+}
